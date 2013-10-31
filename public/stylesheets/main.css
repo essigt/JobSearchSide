@@ -1,0 +1,152 @@
+body.city {
+    background-color: #3d4f69; /*Fallback*/
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-image:url(../images/BG_Edited.jpg);
+}
+
+
+h1 {
+    color: white;
+    /*ont: Arial;*/
+    font-family: Calibri;
+    font-weight: 800;    
+    font-size: 40pt;
+    font-size-adjust:auto;
+    
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+}
+
+
+div.container {
+    position:relative;
+    top: 100px;
+}
+
+#searchbar {
+    /*clear:both;*/
+}
+
+div.BoxBG {
+    border-width: 1px;
+    border-color: rgb( 0, 0, 0 );
+    border-style: solid;
+    border-radius: 5px 0px 0px 5px;
+    
+    /*border-right: rgb();*/
+    
+    background-image: -moz-linear-gradient( 90deg, rgb(48,51,51) 0%, rgb(75,79,79) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(48,51,51) 0%, rgb(75,79,79) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(48,51,51) 0%, rgb(75,79,79) 100%);
+
+    box-shadow:  1px 1px 0px rgba(255,255,255,0.2) inset;
+    
+    height:40px;    
+    width:1100px;
+    
+    padding: 6px;
+    margin:0px;
+    margin-bottom: 8px;
+    
+    float:left;    
+    display: block;
+}
+
+
+a.bluebutton {
+    display:block;
+    
+    border-width: 1px;
+    border-color: rgb( 0, 0, 0 );
+    border-style: solid;
+    border-radius: 0px 5px 5px 0px;    
+    border-left: none;
+
+    background-image: -moz-linear-gradient( 90deg, #2a659e 0%, #3784ce 100%);
+    background-image: -webkit-linear-gradient( 90deg, #2a659e 0%, #3784ce 100%);
+    background-image: -ms-linear-gradient( 90deg, #2a659e 0%, #3784ce 100%);
+
+    box-shadow: 1px 1px 0px rgba(255,255,255,0.2) inset;
+    
+    height:40px;
+    width: 40px;
+    padding: 6px;
+    
+    float:right;
+    
+    color: #fff;
+    font-size:22px;         
+    text-align:center;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.2), 1px 1px 1px rgba(255,255,255,0.2);
+}
+
+
+a.bluebutton:active
+{    
+    background: none;
+    background-image: none;
+}
+
+
+a.bluebutton:hover {
+    background-image: -moz-linear-gradient( 90deg, #2f70af 0%, #3f97ec 100%);
+    background-image: -webkit-linear-gradient( 90deg, #2f70af 0%, #3f97ec 100%);
+    background-image: -ms-linear-gradient( 90deg, #2f70af 0%, #3f97ec 100%);
+}
+
+
+/*  */
+input[type="search"] {
+    color: #656565;
+    
+    border-width: 1px;
+    border-color: rgb( 19, 19, 19 );
+    border-style: solid;
+    border-radius: 3px;
+    
+    box-shadow: 2px 2px 7px rgba(0,0,0, 0.5) inset;
+    
+    height: 26px;
+    width: 49.5%;    
+    padding:4px;
+    padding-left:26px;
+    
+    background-color: #f7f7f7 ;
+}
+
+
+.search {
+    background-image:url(../images/city.png);
+}
+
+
+.moveright {
+    margin-left:-18px;
+    left:25px;
+    z-index:9999;
+    color:#656565;
+    top:2px;
+    font-size:14px;
+}
+
+
+#entries {
+    clear: both;
+}
+
+
+.entry {
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: 18px;
+    
+    
+    margin-top: 10px;
+    padding:5px;
+    -webkit-animation: insert 0.3s linear;
+    
+}
+

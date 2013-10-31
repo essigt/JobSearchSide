@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Tim Essig">
+        <!--<link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
+
+        <title>Search your dream Job</title>
+
+        <!-- Bootstrap core CSS -->        
+        <link href="stylesheets/bootstrap.css" rel="stylesheet">
+        
+        <link href="stylesheets/main.css" rel="stylesheet">
+        <link href="stylesheets/animations.css" rel="stylesheet">
+        
+        <script src="javascripts/jquery.js" type="text/javascript"></script>
+        
+        
+        <script type="text/javascript">
+            function init()  {
+                $( "#search" ).click(function() {
+                    //Query jobs/search/xx/yy                    
+                    var title = $('#title').val();
+                    var location = $('#location').val();
+                    
+                    //Clear result container
+                    $("#entries").empty();
+                    
+                    $.ajax({
+                        url: "jobs/search/" + title + "/" + location
+                    }).done(function(data) {
+                        for(var i=0; i < data.length; i++) {
+                            var newEntry = "<div class=\"entry\">" + data[i].title + " in " + data[i].location + "</div>\n";
+                            $("#entries").prepend(newEntry);        
+                        }
+                    });
+                    
+                    
+                });
+            }
+        </script>
+        
+    </head>
+    <!-- NAVBAR ================================================== -->
+    <body class="city" onload="init()" >
+        <div class="container">
+        
+            <h1>Find the best Job in your City</h1>
+            
+            <div id="searchbar" >
+                <div class="BoxBG">
+                    <span class="glyphicon glyphicon-briefcase moveright"></span>
+                    <input type="search" name="search" id="title" />
+                    <span class="glyphicon glyphicon-map-marker moveright"></span>
+                    <input type="search" name="search2"  id="location" >
+                    
+                    
+                </div>
+                <a class="bluebutton" id="search" href="#">
+                    <span class="glyphicon glyphicon-search"></span>
+                </a>
+            </div>
+            
+            <div id="entries" >
+            </div>
+        </div>
+        
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,34 @@
+@keyframes clicked
+{
+    from {
+        font-size: 22px;
+    }
+    
+    to {
+        font-size: 0px;
+    }
+}
+
+@-webkit-keyframes clicked /* Safari and Chrome */
+{
+    from {
+       color: #fff;
+    }
+    
+    to {
+        color: #ccc;
+    }
+}
+
+
+/* Inser animation */
+
+@-webkit-keyframes insert /* Safari and Chrome */
+{
+    0%  {height: 0px; opacity:0;}
+    
+    50% {height: 37px; opacity:0;}
+    
+    100%{height: 37px;  opacity:1;}
+}
+
