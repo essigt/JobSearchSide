@@ -1,4 +1,4 @@
-var titles = ["Software Engeneer", "Firefighter", "Software Architect", "Teacher", "Big Boss"];
+var titles = ["Software Engineer", "Firefighter", "Software Architect", "Teacher", "Big Boss"];
 var locations = ["Karlsruhe", "Karlsruhe-Mühlburg", "Karlsruhe-Süd", "Karlsruhe-Reinhafen", "Eppingen", "San Francisco", "Sydney"];
 
 /**

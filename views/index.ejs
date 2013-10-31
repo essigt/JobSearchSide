@@ -31,7 +31,7 @@
                         url: "jobs/search/" + title + "/" + location
                     }).done(function(data) {
                         for(var i=0; i < data.length; i++) {
-                            var newEntry = "<div class=\"entry\">" + data[i].title + " in " + data[i].location + "</div>\n";
+                            var newEntry = "<div class=\"entry\"><span class=\"hl\">" + data[i].title + "</span> in <span class=\"hl\">" + data[i].location + "</span></div>\n";
                             $("#entries").prepend(newEntry);        
                         }
                     });
